@@ -31,8 +31,8 @@ internal fun Project.configureKotlinMultiplatformAndroid(kotlinMultiplatformExte
         val iosXcframework = XCFramework(project.iosFrameworkBaseName())
 
         targets.withType(KotlinMultiplatformAndroidLibraryTarget::class.java).configureEach {
-            compileSdk = libs.findVersion("android-compileSdk").get().requiredVersion.toInt()
-            minSdk = libs.findVersion("android-minSdk").get().requiredVersion.toInt()
+            compileSdk = libs.findVersion("androidCompileSdk").get().requiredVersion.toInt()
+            minSdk = libs.findVersion("androidMinSdk").get().requiredVersion.toInt()
         }
 
         targets.withType(KotlinNativeTarget::class.java).configureEach {

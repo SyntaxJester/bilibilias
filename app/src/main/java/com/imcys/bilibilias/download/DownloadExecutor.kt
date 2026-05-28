@@ -2,6 +2,7 @@ package com.imcys.bilibilias.download
 
 import com.imcys.bilibilias.data.repository.AppSettingsRepository
 import com.imcys.bilibilias.datastore.*
+import com.imcys.bilibilias.shared.download.runtime.SharedDownloadExecutor
 import io.ktor.client.HttpClient
 import io.ktor.client.request.head
 import io.ktor.client.request.header

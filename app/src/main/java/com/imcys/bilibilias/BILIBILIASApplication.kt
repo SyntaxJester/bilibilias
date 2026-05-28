@@ -14,7 +14,7 @@ import com.imcys.bilibilias.datastore.maxConcurrentDownloads
 import com.imcys.bilibilias.di.androidPlatformKoinModules
 import com.imcys.bilibilias.download.FfmpegRuntimeConfig
 import com.imcys.bilibilias.download.NewDownloadManager
-import com.imcys.bilibilias.download.SharedDownloadManager
+import com.imcys.bilibilias.shared.download.runtime.SharedDownloadManager
 import com.imcys.bilibilias.shared.di.sharedKoinModules
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

@@ -42,6 +42,11 @@ android {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86_64")
         }
     }
+
+    lint {
+        disable += "Instantiatable"
+    }
+
     signingConfigs {
         create("BILIBILIASSigningConfig") {
             enableV3Signing = true
@@ -148,6 +153,7 @@ dependencies {
     implementation(project(":core:data"))
     implementation(project(":shared"))
 
+    implementation(libs.androidx.activity.compose)
     implementation(libs.ffmpeg.kit.x6kb)
 
     // Firebase 选配
@@ -205,8 +211,8 @@ fun DependencyHandlerScope.baiduStatDependencies() {
 // Google Play 依赖配置
 fun DependencyHandlerScope.googlePlayDependencies(enabled: Boolean) {
     val googlePlayLibs = listOf(
-        libs.play.app.update.kts,
-        libs.play.app.review.kts
+        libs.play.app.update.ktx,
+        libs.play.app.review.ktx
     )
     googlePlayLibs.forEach {
         if (enabled) {

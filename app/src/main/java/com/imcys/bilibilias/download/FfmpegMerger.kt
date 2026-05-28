@@ -15,6 +15,8 @@ import com.imcys.bilibilias.data.repository.DownloadTaskRepository
 import com.imcys.bilibilias.database.entity.download.DownloadMode
 import com.imcys.bilibilias.database.entity.download.DownloadSubTaskType
 import com.imcys.bilibilias.database.entity.download.NamingConventionInfo
+import com.imcys.bilibilias.shared.download.model.AppDownloadTask
+import com.imcys.bilibilias.shared.download.model.LocalSubtitle
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.suspendCancellableCoroutine
 import java.io.File

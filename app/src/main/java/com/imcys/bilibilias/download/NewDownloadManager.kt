@@ -11,7 +11,7 @@ import android.os.Build
 import android.os.IBinder
 import android.util.Log
 import androidx.annotation.RequiresPermission
-import com.imcys.bilibilias.common.utils.download.DanmakuXmlUtil
+import com.imcys.bilibilias.shared.download.util.DanmakuXmlUtil
 import com.imcys.bilibilias.common.utils.toHttps
 import com.imcys.bilibilias.data.model.download.DownloadSubTask
 import com.imcys.bilibilias.data.model.download.DownloadTaskTree
@@ -34,6 +34,11 @@ import com.imcys.bilibilias.database.entity.download.NamingConventionInfo
 import com.imcys.bilibilias.download.service.DownloadService
 import com.imcys.bilibilias.network.model.video.BILIVideoDash
 import com.imcys.bilibilias.network.model.video.BILIVideoDurl
+import com.imcys.bilibilias.shared.download.model.AppDownloadTask
+import com.imcys.bilibilias.shared.download.naming.NamingConventionHandler
+import com.imcys.bilibilias.shared.download.runtime.SharedDownloadExecutor
+import com.imcys.bilibilias.shared.download.runtime.SharedDownloadManager
+import com.imcys.bilibilias.shared.download.model.TaskRuntimeInfo
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsBytes

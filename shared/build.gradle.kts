@@ -30,6 +30,7 @@ kotlin {
 
     sourceSets {
         androidMain.dependencies {
+            implementation(libs.androidx.activity.compose)
             implementation(libs.device.compat)
             implementation(libs.androidx.ui.tooling.preview)
             implementation(libs.androidx.documentfile)
