@@ -40,4 +40,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-            name: Bilibilias-APKpath: "**/build/outputs/apk/**/*.apk"
+            name: Bilibilias-APK
+            path: "**/build/outputs/apk/**/*.apk"
